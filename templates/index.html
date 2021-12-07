@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+    <!-- icons -->  
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icon/apple-icon-57x57.png') }}">
+     <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename=' icon/apple-icon-60x60.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icon/apple-icon-72x72.png') }} ">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icon/apple-icon-76x76.png') }} ">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icon/apple-icon-114x114.png') }} ">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icon/apple-icon-120x120.png') }} ">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icon/apple-icon-144x144.png') }} ">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icon/apple-icon-152x152.png') }}  ">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename=' icon/apple-icon-180x180.png') }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='icon/android-icon-192x192.png') }} ">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='icon/favicon-32x32.png') }} ">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='icon/favicon-96x96.png') }} ">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icon/favicon-16x16.png') }} ">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- fonts -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/c8e0bde2cd.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <title>Personal site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- css -->
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+    
+     
+    
+
+    
+</head>
+<body>
+  
+
+ <!-- --------  NAV BAR   ------------ -->
+  
+  
+ <div class="container">
+  <div class="sun sun-logo ">
+     <i class="fas fa-sun mode "></i>
+  </div>
+</div>
+
+    <!-- <button onclick="myFunction()" class="mode change"><i class="fas fa-moon"></i></button> -->
+
+ <div class="nav-container"> 
+ <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<!-- -------------------------------------------------------------------------- -->
+
+    <div class="top-container">
+      <!-- <img src="{{ url_for('static', filename='image/subham.png') }}">  -->
+      <img class="profile-img" src="{{ url_for('static', filename='image/subham.png') }}" alt="subham's pic" height="=170" width="170">
+      <h1>Subham Patnaik</h1>
+      <div class="wrapper"> 
+      <h2 class="tag-line typing ">Web Developer...</h2>
+
+      </div>
+    </div>
+
+   
+    <div class="middle-container">
+
+      <h2 class="alignment-center sub-title">Skills</h2>
+
+      <main class="grid">
+        <article>
+          <button type="submit" class="image-btn">
+            <img src="{{ url_for('static', filename='image/MERN.png') }}" alt="Sample photo">
+          </button>
+          <div class="text"></div>
+        </article>
+
+        <article>
+          <button type="submit" class="image-btn">
+            <img src="{{ url_for('static', filename='image/AI.png') }}" alt="Sample photo">
+          </button>
+          <div class="text"></div>
+        </article>
+
+        <article>
+          <button type="submit" class="image-btn">
+            <img src="{{ url_for('static', filename='image/ML.png') }}" alt="Sample photo">
+            </button>
+          <div class="text"></div>
+        </article>
+
+        <article>
+          <button type="submit" class="image-btn"> 
+            <img src="{{ url_for('static', filename='image/blockchain.png') }}" alt="Sample photo">
+          </button>
+          <div class="text"></div>
+        </article>
+
+        <article>
+          <button type="submit" class="image-btn">
+            <img src="{{ url_for('static', filename='image/python.png') }}"" alt="Sample photo">
+          </button>
+          <div class="text"></div>  
+        </article>
+
+        <article>
+          <button type="submit" class="image-btn">
+            <img src="{{ url_for('static', filename='image/java.png') }}"" alt="Sample photo">
+          </button>
+          <div class="text"></div>
+        </article>
+      </main>
+
+
+        <div class="alignment-center" id="contact">
+          <h2>Get in touch</h2>
+          <h3></h3>
+          <p></p>
+          <a class="btn" href="mailto:subhampatnaik2000@gmail.com">CONTACT ME</a>
+        </div> 
+      </div>
+  
+      <div class="bottom-container alignment-center">
+        <a class="footer-link" href="https://www.linkedin.com/"><i class="fa-3x fab fa-linkedin"></i></a>
+        <a class="footer-link" href="https://twitter.com/"><i class="fa-3x fab fa-twitter-square"></i></a>
+        <a class="footer-link" href="https://www.facebook.com/"><i class="fa-3x fab fa-facebook-square"></i></a>
+        <p>&copy; subham patnaik</p>
+      </div>
+
+    <!-- javascript -->
+
+      <script src="{{ url_for('static', filename='javascript/responsive.js') }}" type="text/javascript"></script>  
+  
+</body>
+</html>
