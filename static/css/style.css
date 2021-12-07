@@ -76,7 +76,6 @@ h2{
     font-family: monospace;
     font-size: 2em;
     animation-iteration-count: infinite;
-    /* animation-duration: 3.7s; */
     animation-delay: 5s;
   }
   
